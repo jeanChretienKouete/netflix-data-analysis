@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    container_name: app-container
+    volumes:
+      - .:/app
+    ports:
+      - "8500:8500"
+      - "8888:8888"
+    environment:
+      - PYTHONPATH=/app
