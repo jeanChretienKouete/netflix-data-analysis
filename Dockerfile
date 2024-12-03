@@ -42,4 +42,4 @@ COPY . .
 EXPOSE 8500
 
 # Command to run the Streamlit app
-CMD ["sh", "-c", "jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root"]
+CMD ["sh", "-c", "streamlit run app.py & jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root"]
